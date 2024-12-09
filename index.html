@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaha Agrovet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.png" type="image/png">
+</head>
+<body>
+ <!--Header section-->   
+ <header>
+   <!--Navigation section-->
+ <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  <form class="search-bar" action="#" method="get">
+    <input type="text" name="search" placeholder="Search for products or services">
+    <button type="submit">Search</button>
+  </form>
+</nav>
+<!--Hero Section-->
+   <section class="hero">
+    <h1>Welcome to kaha agrovet</h1>
+    <p>Your trusted partner for agricultural and veterinary needs.</p>
+    <a href="#products" class="cta">Explore Products</a>
+   </section>
+ </header>
+
+ <!--Home Section-->
+ 
+    <section id="home">
+        <h2 >Our Mission</h2>
+        <p>Providing high-quality agricultural supllies to support sustainable farming practices. </p>
+    </section>
+ <!--Products Section-->
+ <section id="products">
+    <h2>Our Products</h2>
+    <input type="text" id="searchBar" placeholder="Search products..." aria-label="Search products">
+    <div class="product">
+
+        <img src="images/fertilizer 1.jpg" alt="Fertilizer" class="product-img">
+        <h3>Fertilizers</h3>
+        <p>High quality fertilizers to boost your crop growth</p>
+        <!-- <button type="button">view</button> -->
+    </div>
+    <div class="product">
+<img src="images/animal-feed.jpeg" alt="Animal Feed" class="product-img">
+                <h3>Animal Feed</h3>
+             <p>Nutrient-rich feed for healthy livestock.</p>
+    </div>
+    <div class="product">
+      <img src="images/seeds.webp" alt="Seeds" class="product-img"> 
+   <h3>Seeds</h3>
+ <p>Premium seeds for high-yield crops.</p>
+    </div>
+    <div class="product">
+      <img src="images/veterinary medicines.jpeg" alt="Veterinary medicines" class="product-img">
+      <h3>Veterinary medicines</h3>
+ <p> A wide range of medicines for animal health</p>
+    </div>
+    <div class="product">
+      <img src="images/pet supplies.jpeg" alt="pet supplies" class="product-img">
+      <h3>Pet Supplies</h3>
+      <p>Everything your pet needs, from food to accessories</p>
+    </div>
+ </section>
+ <!--Services Section-->
+ <section id="services">
+     <h2>Our Services</h2>
+       <ul>
+           <li>Soil Testing</li>
+           <li>Consultations for Sustainable Farming</li>
+           <li>Delivery of products to Your Farm</li>
+           <li>Animal health check-ups</li>
+           <li>Vaccination programs</li>
+           <li>Emergency veterinary care</li>
+      </ul>
+ </section>
+ <!--About Us Section-->
+ <section id="about">
+     <h2>About Us</h2>
+       <p>Kaha Agrovet has been providing high-quality agricultural supplies to farmers for a decade. Our mission is to support  sustainable farming practices and help farmers achieve better crop yields and healthier livestock.</p>
+ </section>
+ <!--Contact Us Section-->
+ <section id="Contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free  to contact us!</p>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit">Send Message</button>
+   </form>
+ </section>
+ <section id="testimonials">
+   <h2>What Our Customers say</h2>
+   <div class="testimonial">
+    <p> "kaha Agrovet's veterinary medicines saved my livestock.Highly recommend their services!"</p>
+    <p>-John, Farmer</p>
+   </div>
+   <div class="testimonial">
+      <p>"Their pet supplies are top-notch. My dog loves the treats!"</p>
+      <p>-Mary, Pet Owner</p>
+   </div>
+
+ </section>
+
+ <!--Footer Section-->
+ <footer>
+    <p> &copy; 2024 Kaha Agrovet. All rights reserved.</p>
+    <p> Call us: +254-712-300-451 | Email : <a href="malito:info@kahaagrovet.com">info@kahaagrovet.com</a></p>
+    <p>Follow us on:
+      <a href="#"><i class="fab fa-facebook"></i> Facebook</a> |
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a> |
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    </p>
+ </footer>
+ <script src="script.js"></script>
+ <script src="script.js" defer></script>
+</body>
+<a href="#top" class="back-to-top">Top</a>
+<button id="scrollToTop" title="Go to top">↑</button>
+</html>

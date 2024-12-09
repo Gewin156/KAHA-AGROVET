@@ -1,0 +1,362 @@
+/* Reset default margins and paddings */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6;
+    color: #333;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #28a745;
+    color: white;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    display: none;
+}
+.back-to-top:hover{
+    background-color: #218838;
+}
+header{
+    background-color: #28a745;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.hero{
+    background: url('images/hero-bgm.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem; /*adds spacing around the tagline*/
+
+}
+.hero .cta {
+    background-color: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.hero .cta:hover {
+    background-color: #218838;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav a:hover{
+background-color: #28a745;
+text-decoration: none;
+}
+.search-bar{
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.search-bar input{
+    padding: 0.8rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-bar button{
+padding: 0.8rem;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.search-bar button:hover{
+    background-color: #218838;
+}
+section{
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+h2{
+    color: #28a745;
+}
+/*Products Section*/
+.product{
+    display: inline-block;
+    width: 28%;
+    text-align: center;
+    margin: 1rem;
+    vertical-align: top;
+}
+.product-img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.product h3 {
+color: #28a745;
+}
+.product p{
+    color: #666;
+}
+/*Services Section*/
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background-color: #9c9898;
+     color: white;
+     padding: 0.8rem;
+     margin: 0.5rem 0;
+    border-radius: 5px;
+}
+  
+
+/*Contact Us Section*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input,
+form textarea{
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button{
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #218838;
+}
+main{
+    padding: 1rem;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+#testimonials {
+    background-color: #fdf5e6;
+    padding: 2rem;
+    text-align: center;
+}
+.testimonial{
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+footer {
+    background-color: #2e7d32; /* Dark green */
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #07f743;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #aed581; /* Light green for hover effect */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #f4f4f4;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #aed581; /* Light green on hover */
+  }  
+a{
+    color: #ff8c00;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .product {
+        width: 90%; /*Adjust product card width*/
+        margin: 1rem auto;
+    }
+    .search-bar input{
+        width: 90%; /*Adjust search bar width*/
+    }
+    .hero{
+        background-size: contain;
+        min-height: 50vh;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+} 
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .product {
+        width: 45%; /* Two products per row */
+        margin: 1rem auto;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px){
+    /*Example:Stack navigation links on smaller screens*/
+    nav ul{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+.product-list{
+    grid-template-columns: 1fr;/*stack products on mobile*/
+}
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
