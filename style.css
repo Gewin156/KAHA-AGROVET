@@ -121,65 +121,64 @@ h2{
 /*Products Section*/
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid layout */
-    gap: 20px; /* Space between cards */
-    padding: 20px;
-    max-width: 100%; /* Prevent overflow */
-    box-sizing: border-box; /* Account for padding */
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible columns */
+    gap: 1rem; /* Add spacing between cards */
+    padding: 1rem; /* Add padding around the grid */
+    box-sizing: border-box;
   }
   
   .product {
+    background: #fff; /* Add a white background for cards */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Space inside each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Ensure consistent alignment */
     text-align: center;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: auto; /* Allow cards to grow as needed */
-    min-height: 300px; /* Ensure minimum height for uniformity */
-    overflow: hidden; /* Prevent content spill */
-    box-sizing: border-box; /* Ensure padding doesn’t increase size */
+    max-width: 100%; /* Ensure responsiveness */
   }
- 
+  
   .product-img {
-    width: 100%;
-    max-width: 150px;
+    width: 100%; /* Ensure the image takes up the full card width */
+    max-height: 150px; /* Limit the height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 0.8rem; /* Space below the image */
+    border-radius: 5px; /* Match card rounding */
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 8px;
   }
   
   .product h3 {
+    font-size: 1.1rem; /* Adjust heading size */
     color: #28a745;
-    margin: 10px 0;
+    margin-bottom: 0.5rem; /* Space below the heading */
   }
   
   .product p {
+    font-size: 0.9rem; /* Compact font size for descriptions */
     color: #666;
-    font-size: 14px;
-    margin: 10px 0;
-    flex-grow: 1; /* Ensures all descriptions align at the bottom */
+    margin-bottom: 0.5rem;
   }
-  
-  .product button {
-    margin-top: auto; /* Push button to the bottom */
-    padding: 8px 16px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
+  .product-search {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #searchBar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .product button:hover {
-    background-color: #218838;
-  }
-  
+    background-color: #f8f8f8;
+}
+/* Product grid styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 /*Services Section*/
 ul{
     list-style: none;
